@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Honkai</title>
+        <link rel="stylesheet" th:href="@{//bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <header>
+                    <div class="col-md-12">
+                        <img th:src="@{/img/Logo.jpg}" alt="Logo do Site" />
+                    </div>
+                </header>
+            </div>
+        </div>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <section>
+                        <div class="col-md-12">
+                            <h3 th:insert="~{navbar.html :: nav}"></h3>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <section>
+                        <div class="col-md-12">
+                            <h3 th:insert="~{navBD.html :: nav}"></h3>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <h2>A Abundância</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/ConversaPosOperatoria.png}" alt="Img Conversa Pós-Operatória" /></a>
+                                    <figcaption>Conversa Pós-Operatória</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/Cornucopia.png}" alt="Img Cornucópia" /></a>
+                                    <figcaption>Cornucópia</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/EcosdoCaixao.png}" alt="Img Ecos do Caixão" /></a>
+                                    <figcaption>Ecos do Caixão</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/EiEstouAqui.png}" alt="Img Ei, Estou Aqui!" /></a>
+                                    <figcaption>Ei, Estou Aqui!</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/FrutaDelicada.png}" alt="Img Fruta Delicada" /></a>
+                                    <figcaption>Fruta Delicada</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/MomentoPerfeito.png}" alt="Img Momento Perfeito" /></a>
+                                    <figcaption>Momento Perfeito</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/Multiplicacao.png}" alt="Img Multiplicação" /></a>
+                                    <figcaption>Multiplicação</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/NoiteAterrorizante.png}" alt="Img Noite Aterrorizante" /></a>
+                                    <figcaption>Noite Aterrorizante</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/OCalorEncurtaasNoitesGeladas.png}" alt="Img O Calor Encurta as Noites Geladas" /></a>
+                                    <figcaption>O Calor Encurta as Noites Geladas</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/OQueeReal.png}" alt="Img O Que é Real?" /></a>
+                                    <figcaption>O Que é Real?</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/OTempoNaoEsperaporNinguem.png}" alt="Img O Tempo Não Espera por Ninguém" /></a>
+                                    <figcaption>O Tempo Não Espera por Ninguém</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/QuidProQuo.png}" alt="Img Quid Pro Quo" /></a>
+                                    <figcaption>Quid Pro Quo</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-12">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Abundancia/SentimentoCompartilhado.png}" alt="Img Sentimento Compartilhado" /></a>
+                                    <figcaption>Sentimento</br>Compartilhado</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <h2>A Caça</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/Antagonista.png}" alt="Img Antagonista" /></a>
+                                    <figcaption>Antagonista</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/ApenasoSilencioSobrou.png}" alt="Img Apenas o Silêncio Sobrou" /></a>
+                                    <figcaption>Apenas o Silêncio Sobrou</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/FlechaVeloz.png}" alt="Img Flecha Veloz" /></a>
+                                    <figcaption>Flecha Veloz</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/Flechas.png}" alt="Img Flechas" /></a>
+                                    <figcaption>Flechas</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/InquietanteExtasiante.png}" alt="Img Inquietante, Extasiante" /></a>
+                                    <figcaption>Inquietante, Extasiante</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/InscrevaseparaMais.png}" alt="Img Inscreva-se para Mais!" /></a>
+                                    <figcaption>Inscreva-se para Mais!</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/JogodeEspadas.png}" alt="Img Jogo de Espadas" /></a>
+                                    <figcaption>Jogo de Espadas</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/NaNoite.png}" alt="Img Na Noite" /></a>
+                                    <figcaption>Na Noite</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/OBatismodePensamentoPuro.png}" alt="Img O Batismo de Pensamento Puro" /></a>
+                                    <figcaption>O Batismo de Pensamento Puro</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/ORioCorrenaPrimavera.png}" alt="Img O Rio Corre na Primevara" /></a>
+                                    <figcaption>O Rio Corre na Primavera</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/OUltimoVencedor.png}" alt="Img O Último Vencedor" /></a>
+                                    <figcaption>O Último Vencedor</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/PercorrendooMarEstelar.png}" alt="Img Percorrendo o Mar Estelar" /></a>
+                                    <figcaption>Percorrendo o Mar Estelar</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/RetornoaEscuridao.png}" alt="Img Retorno à Escuridão" /></a>
+                                    <figcaption>Retorno à</br>Escuridão</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/SonoProfundo.png}" alt="Img Sono Profundo" /></a>
+                                    <figcaption>Sono Profundo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Caca/VelejandoemDirecaoaumaSegundaVida.png}" alt="Img Velejando em Direção a uma Segunda Vida" /></a>
+                                    <figcaption>Velejando em</br>Direção a uma</br>Segunda Vida</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <h2>A Destruição</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/AlgoInsubstituivel.png}" alt="Img Algo Insubstituível" /></a>
+                                    <figcaption>Algo Insubstituível</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/AsToupeirasTeDaoBoasvindas.png}" alt="Img As Toupeiras Te Dão Boas-vindas" /></a>
+                                    <figcaption>As Toupeiras Te Dão Boas-vindas</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/AuHoradePassear.png}" alt="Img Au! Hora de Passear" /></a>
+                                    <figcaption>Au! Hora de Passear</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/CasaDestruida.png}" alt="Img Casa Destruída" /></a>
+                                    <figcaption>Casa Destruída</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/CeuColapsado.png}" alt="Img Céu Colapsado" /></a>
+                                    <figcaption>Céu Colapsado</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/ChamasDistantes.png}" alt="Img Chamas Distantes" /></a>
+                                    <figcaption>Chamas Distantes</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/EuSereiMinhaPropriaEspada.png}" alt="Img Eu Serei Minha Própria Espada" /></a>
+                                    <figcaption>Eu Serei Minha Própria Espada</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/MaisClarodoqueoSol.png}" alt="Img Mais Claro do que o Sol" /></a>
+                                    <figcaption>Mais Claro do que o Sol</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/MorteMutua.png}" alt="Img Morte Mútua" /></a>
+                                    <figcaption>Morte Mútua</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/NaQuedadeUmAeon.png}" alt="Img Na Queda de Um Aeon" /></a>
+                                    <figcaption>Na Queda de Um Aeon</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/OLadoInacessivel.png}" alt="Img O Lado Inacessível" /></a>
+                                    <figcaption>O Lado Inacessível</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/OndeosSonhosDeveriamRepousar.png}" alt="Img Onde os Sonhos Deveriam Repousar" /></a>
+                                    <figcaption>Onde os Sonhos Deveriam Repousar</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-3">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/PromessaIndelevel.png}" alt="Img Promessa Indelével" /></a>
+                                    <figcaption>Promessa</br>Indelével</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/SemEscapatoria.png}" alt="Img Sem Escapatória" /></a>
+                                    <figcaption>Sem</br>Escapatória</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/SoboCeuAzul.png}" alt="Img Sob o Céu Azul" /></a>
+                                    <figcaption>Sob o</br>Céu Azul</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Destruicao/UmVotoSecreto.png}" alt="Img Um Voto Secreto" /></a>
+                                    <figcaption>Um Voto</br>Secreto</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <h2>A Erudição</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/ASolenidadedoCafedaManha.png}" alt="Img A Solenidade do Café da Manhã" /></a>
+                                    <figcaption>A Solenidade do Café da Manhã</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/AntesdoAmanhecer.png}" alt="Img Antes do Amanhecer" /></a>
+                                    <figcaption>Antes do Amanhecer</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/BancodeDados.png}" alt="Img Banco de Dados" /></a>
+                                    <figcaption>Banco de Dados</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/CalculoIninterrupto.png}" alt="Img Cálculo Ininterrupto" /></a>
+                                    <figcaption>Cálculo Ininterrupto</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/ChaveMestra.png}" alt="Img Chave Mestra" /></a>
+                                    <figcaption>Chave Mestra</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/DepoisdaQuedadeCharmony.png}" alt="Img Depois da Queda de Charmony" /></a>
+                                    <figcaption>Depois da Queda de Charmony</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/FaçaoMundoClamar.png}" alt="Img Faça o Mundo Clamar" /></a>
+                                    <figcaption>Faça o Mundo Clamar</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/HojeeMaisumDiadePaz.png}" alt="Img Hoje é Mais um Dia de Paz" /></a>
+                                    <figcaption>Hoje é Mais um Dia de Paz</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/MasaEsperancanaotemPreco.png}" alt="Img Mas a Esperança não tem Preço" /></a>
+                                    <figcaption>Mas a Esperança não tem Preço</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/MeuProprioNascimento.png}" alt="Img Meu Próprio Nascimento" /></a>
+                                    <figcaption>Meu Próprio Nascimento</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/NoitenaViaLactea.png}" alt="Img Noite na Via Láctea" /></a>
+                                    <figcaption>Noite na Via Láctea</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/ODiaemqueoCosmosCaiu.png}" alt="Img O Dia em que o Cosmos Caiu" /></a>
+                                    <figcaption>O Dia em que o Cosmos Caiu</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/RepousodosGenios.png}" alt="Img Repouso dos Gênios" /></a>
+                                    <figcaption>Repouso</br>dos Gênios</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/Sagacidade.png}" alt="Img Sagacidade" /></a>
+                                    <figcaption>Sagacidade</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-4">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Erudicao/UmInstanteEternamenteAdorado.png}" alt="Img Um Instante Eternamente Adorado" /></a>
+                                    <figcaption>Um Instante</br>Eternamente</br>Adorado</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div> 
+            </section>
+            <h2>A Harmonia</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/AventuradeSonhopolis.png}" alt="Img Aventura de Sonhópolis" /></a>
+                                    <figcaption>Aventura de Sonhópolis</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/DanceDanceDance.png}" alt="Img Dance! Dance! Dance!" /></a>
+                                    <figcaption>Dance! Dance! Dance!</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/EncontroPlanetario.png}" alt="Img Encontro Planetário" /></a>
+                                    <figcaption>Encontro Planetário</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/EsculpindoaLuaTecendoasNuvens.png}" alt="Img Esculpindo a Lua, Tecendo as Núvens" /></a>
+                                    <figcaption>Esculpindo a Lua, Tecendo as Núvens</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/FugaTerrena.png}" alt="Img Fuga Terrena" /></a>
+                                    <figcaption>Fuga Terrena</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/LuzesNoturnas.png}" alt="Img Luzes Noturnas" /></a>
+                                    <figcaption>Luzes Noturnas</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/MasaBatalhaNaoAcabou.png}" alt="Img Mas a Batalha Não Acabou" /></a>
+                                    <figcaption>Mas a Batalha Não Acabou</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/Meditacao.png}" alt="Img Meditação" /></a>
+                                    <figcaption>Meditação</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/MemoriasdoPassado.png}" alt="Img Memórias do Passado" /></a>
+                                    <figcaption>Memórias do Passado</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/MeuPassadonoEspelho.png}" alt="Img Meu Passado no Espelho" /></a>
+                                    <figcaption>Passado no Espelho</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/PassadoeFuturo.png}" alt="Img Passado e Futuro" /></a>
+                                    <figcaption>Passado e Futur</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/PelaJornadadoAmanha.png}" alt="Img Pela Jornada do Amanhã" /></a>
+                                    <figcaption>Pela Jornada do Amanhã</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/RededeEngrenagens.png}" alt="Img Rede de Engrenagens" /></a>
+                                    <figcaption>Rede de</br>Engrenagens</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Harmonia/Refrao.png}" alt="Img Refrão" /></a>
+                                    <figcaption>Refrão</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <h2>A Inexistência</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/ADeterminacaoBrilhaComoGotasdeSuor.png}" alt="Img A Determinação Brilha Como Gotas de Suor" /></a>
+                                    <figcaption>A Determinação Brilha Como Gotas de Suor</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/AindanosVeremosdeNovo.png}" alt="Img Ainda nos Veremos de Novo" /></a>
+                                    <figcaption>Ainda nos Veremos de Novo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/AntesdoIniciodaMissaodoTutorial.png}" alt="Img Antes do Início da Missão do Tutorial" /></a>
+                                    <figcaption>Antes do Início da Missão do Tutorial</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" alt="Img Ao Longo da Margem Transitória" /></a>
+                                    <figcaption>Ao Longo da Margem Transitória</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/BoaNoiteeDurmaBem.png}" alt="Img Boa Noite e Durma Bem" /></a>
+                                    <figcaption>Boa Noite e Durma Bem</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/ChuvaConstante.png}" alt="Img Chuva Constante" /></a>
+                                    <figcaption>Chuva Constante</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/CuraSolitaria.png}" alt="Img Cura Solitária" /></a>
+                                    <figcaption>Cura Solitária</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/DancaIlimitada.png}" alt="Img Danca Ilimitada" /></a>
+                                    <figcaption>Danca Ilimitada</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/EHoradoShow.png}" alt="Img É Hora do Show" /></a>
+                                    <figcaption>É Hora do Show</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/EmNomedoMundo.png}" alt="Img Em Nome do Mundo" /></a>
+                                    <figcaption>Em Nome do Mundo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/Fermata.png}" alt="Img Fermata" /></a>
+                                    <figcaption>Fermata</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/Loop.png}" alt="Img Loop" /></a>
+                                    <figcaption>Loop</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-3">
+                               <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/OlhosdaPresa.png}" alt="Img Olhos da Presa" /></a>
+                                    <figcaption>Olhos da Presa</figcaption>
+                                </figure> 
+                            </div>
+                            <div class="col-md-2">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/RecordacaoReforjada.png}" alt="Img Recordação Reforjada" /></a>
+                                    <figcaption>Recordação</br>Reforjada</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/SombraOculta.png}" alt="Img Sombra Oculta" /></a>
+                                    <figcaption>Sombra Oculta</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/Vazio.png}" alt="Img Vazio" /></a>
+                                    <figcaption>Vazio</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Inexistencia/VoceSoPrecisadePaciencia.png}" alt="Img Vocâ Só Precisa de Paciência" /></a>
+                                    <figcaption>Vocâ Só</br>Precisa de</br>Paciência</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <h2>A Preservação</h2>
+            <section id="BD">
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/AEscolhadosLandau.png}" alt="Img A Escolha dos Landau" /></a>
+                                    <figcaption>A Escolha dos Landau</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/Ambar.png}" alt="Img Âmbar" /></a>
+                                    <figcaption>Âmbar</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/ConcertoparaDois.png}" alt="Img Concerto para Dois" /></a>
+                                    <figcaption>Concerto para Dois</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/Defesa.png}" alt="Img Defesa" /></a>
+                                    <figcaption>Defesa</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/DestinoInerentementeInjusto.png}" alt="Img Destino Inerentemente Injusto" /></a>
+                                    <figcaption>Destino Inerentemente Injusto</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/ElajaFechouSeusOlhos.png}" alt="Img Ela já Fechou Seus Olhos" /></a>
+                                    <figcaption>Ela já Fechou Seus Olhos</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/EssaSouEu.png}" alt="Img Essa Sou Eu" /></a>
+                                    <figcaption>Essa Sou Eu</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/FiosForjadosdoDestino.png}" alt="Img Fios Forjados do Destino" /></a>
+                                    <figcaption>Fios Forjados do Destino</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/MomentodeVitoria.png}" alt="Img Momento de Vitória" /></a>
+                                    <figcaption>Momento de Vitória</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/Pioneirismo.png}" alt="Img Pioneirismo" /></a>
+                                    <figcaption>Pioneirismo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/PrimeiroDiadaMinhaVidaNova.png}" alt="Img Primeiro Dia da Minha Vida Nova" /></a>
+                                    <figcaption>Primeiro Dia da Minha Vida Nova</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-1">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/SomosFogoVivo.png}" alt="Img Somos Fogo Vivo" /></a>
+                                    <figcaption>Somos Fogo Vivo</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h3>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/TendenciadoMercadoUniversal.png}" alt="Img Tendência do Mercado Universal" /></a>
+                                    <figcaption>Tendência</br>do Mercado</br>Universal</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="#"><img th:src="@{/img/Cones/Preservacao/TexturadeMemorias.png}" alt="Img Textura de Memórias" /></a>
+                                    <figcaption>Textura de</br>Memórias</figcaption>
+                                </figure>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <p>&copy; Lucas da Fonsceca Perin - Projeto Integrador (Honkai: Star Rail)</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+/*Tags*/
+body{
+    background-color: #6211AC;
+    color: #CA9DFA;
+    font-family: 'Times New Roman', Arial, sans-serif !important;
+}
+header, footer, article{
+    background-color: #5D1B97;
+    text-align: center;
+    border: 2px solid #6211AC;
+}
+header div img{
+    display: block;
+    margin: 0 auto;
+}
+section{
+    background-color: #6211AC;
+    border: 5px solid #5D1B97;
+}
+img{
+    size: 100%;
+    padding: 3px;
+}
+button, input{
+    background-color: #6211AC;
+    color: #CA9DFA;
+    padding: 5px 3px;
+    display: inline-block;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+}
+
+/*Id*/
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+#menu li {
+    border: 2px solid black;
+    border-style: inset;
+    flex: 1;
+    background-color: #5D1B97;
+}
+#menu li a {
+    text-decoration: none; 
+    padding: 5px 10px; 
+    display: block;
+    color: #CA9DFA;
+}
+#menu li a:hover{
+    text-decoration-line: underline;
+    color: #451470;
+}  
+#Personagens h2{
+    text-align: justify !important;
+    display: flex; 
+    justify-content: space-between;
+}
+#Personagens h2 div figure{
+    flex: 1;
+}
+#Personagens h2 div figure figcaption{
+    text-align: center;
+}
+#Personagens h2 div figure a img{
+    background-color: #451470;
+    border: 2px solid black;
+}
+#BD h3{
+    text-align: justify !important;
+    display: flex; 
+    justify-content: space-between;
+}
+#BD h3 div figure{
+    text-align: center;
+    flex: 1;
+}
+#BD h3 div figure figcaption{
+    text-align: center;
+}
+#BD h3 div figure a img{
+    background-color: #451470;
+    border: 2px solid black;
+}
+#Pg{
+    text-align: justify !important;
+    display: flex; 
+    justify-content: space-between;
+}
+#Pg div{
+    text-align: center;
+    flex: 1;
+}
+#Pg div img{
+    background-color: #451470;
+    border: 2px solid black;
+}
+#Pg div h1, #Pg div h2, #Pg div ul li{
+    text-align: center;
+}
+#Pg table{
+    margin: auto;
+    width: 50%;
+}
+#Pg table tr{
+    background-color: #5D1B97;
+    text-align: center;
+}
+#Pg table tr td{
+    text-decoration: none; 
+    padding: 5px 10px; 
+    color: #CA9DFA;
+    text-align: center;
+}
+
+/*Classes*/
+.S{
+    background-color: rgb(255, 127, 127);
+    border: 2px solid black;
+}
+.A{
+    background-color: rgb(255, 191, 127);
+    border: 2px solid black;
+}
+.B{
+    background-color: rgb(255, 223, 127);
+    border: 2px solid black;
+}
+.C{
+    background-color: rgb(255, 255, 127);
+    border: 2px solid black;
+}
+.D{
+    background-color: rgb(191, 255, 127);
+    border: 2px solid black;
+}
+.E{
+    background-color: rgb(127, 255, 127);
+    border: 2px solid black;
+}
+.S h2, .A h2, .B h2, .C h2, .D h2, .E h2{
+    color: #451470;
+}
+.Tier{
+    background-color: rgb(26, 26, 23);
+    border: 1px solid black;
+}
+.Tier a img{
+    border: 1px solid black;
+}
