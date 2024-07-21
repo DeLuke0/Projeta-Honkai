@@ -20,92 +20,80 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <h1 style="text-align: center">NOME</h1>
+                    <h1 style="text-align: center"><span th:text='${personagem.Nome}'></span></h1>
                     <section id="Pg">
                         <div style="margin: auto; display: block; justify-content: center;" class="col-md-4">
-                            <img th:src="@{/img/Personagens/Acheron.jpg}" />
+                            <img th:if="${personagem.ID == 1}" th:src="@{/Img/Personagens/Acheron.jpg}" />
+                            <img th:if="${personagem.ID == 2}" th:src="@{/Img/Personagens/Argenti.jpg}" />
+                            <img th:if="${personagem.ID == 3}" th:src="@{/Img/Personagens/Arlan.jpg}" />
+                            <img th:if="${personagem.ID == 4}" th:src="@{/Img/Personagens/Asta.jpg}" />
+                            <img th:if="${personagem.ID == 5}" th:src="@{/Img/Personagens/Aventurine.jpg}" />
+                            <img th:if="${personagem.ID == 6}" th:src="@{/Img/Personagens/Bailu.jpg}" />
+                            <img th:if="${personagem.ID == 7}" th:src="@{/Img/Personagenso/Black Swan.jpg}" />
+                            <img th:if="${personagem.ID == 8}" th:src="@{/Img/Personagens/Blade.jpg}" />
+                            <img th:if="${personagem.ID == 9}" th:src="@{/Img/Personagens/Boothill.jpg}" />
+                            <img th:if="${personagem.ID == 10}" th:src="@{/Img/Personagens/Bronya.jpg}" />
+                            <img th:if="${personagem.ID == 11}" th:src="@{/Img/Personagens/Clara.jpg}" />
+                            <img th:if="${personagem.ID == 12}" th:src="@{/Img/Personagens/DanHeng.png}" />
+                            <img th:if="${personagem.ID == 13}" th:src="@{/Img/Personagens/DanHengImbibitorLunae.jpg}" />
+                            <img th:if="${personagem.ID == 14}" th:src="@{/Img/Personagens/DrRatio.jpg}" />
+                            <img th:if="${personagem.ID == 15}" th:src="@{/Img/Personagens/Firefly.jpg}" />
+                            <img th:if="${personagem.ID == 16}" th:src="@{/Img/Personagens/FuXuan.jpg}" />
+                            <img th:if="${personagem.ID == 17}" th:src="@{/Img/Personagens/Gallagher.jpg}" />
+                            <img th:if="${personagem.ID == 18}" th:src="@{/Img/Personagens/Gepard.jpg}" />
+                            <img th:if="${personagem.ID == 19}" th:src="@{/Img/Personagens/Guinaifen.jpg}" />
+                            <img th:if="${personagem.ID == 20}" th:src="@{/Img/Personagens/Hanya.jpg}" />
+                            <img th:if="${personagem.ID == 21}" th:src="@{/Img/Personagens/Herta.jpg}" />
+                            <img th:if="${personagem.ID == 22}" th:src="@{/Img/Personagens/Himeko.jpg}" />
+                            <img th:if="${personagem.ID == 23}" th:src="@{/Img/Personagens/Hook.jpg}" />
+                            <img th:if="${personagem.ID == 24}" th:src="@{/Img/Personagens/Huohuo.jpg}" />
+                            <img th:if="${personagem.ID == 25}" th:src="@{/Img/Personagens/Jade.jpg}" />
+                            <img th:if="${personagem.ID == 26}" th:src="@{/Img/Personagens/Jingliu.jpg}" />
+                            <img th:if="${personagem.ID == 27}" th:src="@{/Img/Personagens/JingYuan.jpg}" />
+                            <img th:if="${personagem.ID == 28}" th:src="@{/Img/Personagens/Kafka.jpg}" />
+                            <img th:if="${personagem.ID == 29}" th:src="@{/Img/Personagens/Luka.jpg}" />
+                            <img th:if="${personagem.ID == 30}" th:src="@{/Img/Personagens/Luocha.jpg}" />
+                            <img th:if="${personagem.ID == 31}" th:src="@{/Img/Personagens/Lynx.jpg}" />
+                            <img th:if="${personagem.ID == 32}" th:src="@{/Img/Personagens/March7th.jpg}" />
+                            <img th:if="${personagem.ID == 33}" th:src="@{/Img/Personagens/Misha.jpg}" />
+                            <img th:if="${personagem.ID == 34}" th:src="@{/Img/Personagens/Natasha.jpg}" />
+                            <img th:if="${personagem.ID == 35}" th:src="@{/Img/Personagens/Pela.jpg}" />
+                            <img th:if="${personagem.ID == 36}" th:src="@{/Img/Personagens/Qingque.jpg}" />
+                            <img th:if="${personagem.ID == 37}" th:src="@{/Img/Personagens/Robin.jpg}" />
+                            <img th:if="${personagem.ID == 38}" th:src="@{/Img/Personagens/RuanMei.jpg}" />
+                            <img th:if="${personagem.ID == 39}" th:src="@{/Img/Personagens/Sampo.jpg}" />
+                            <img th:if="${personagem.ID == 40}" th:src="@{/Img/Personagens/Seele.jpg}" />
+                            <img th:if="${personagem.ID == 41}" th:src="@{/Img/Personagens/Serval.jpg}" />
+                            <img th:if="${personagem.ID == 42}" th:src="@{/Img/Personagens/Silver Wolf.jpg}" />
+                            <img th:if="${personagem.ID == 43}" th:src="@{/Img/Personagens/Sparkle.jpg}" />
+                            <img th:if="${personagem.ID == 44}" th:src="@{/Img/Personagens/Sushang.jpg}" />
+                            <img th:if="${personagem.ID == 45}" th:src="@{/Img/Personagens/Tingyun.jpg}" />
+                            <img th:if="${personagem.ID == 46}" th:src="@{/Img/Personagens/Topaz.jpg}" />
+                            <img th:if="${personagem.ID == 47}" th:src="@{/Img/Personagens/TrailblazerFire.jpg}" />
+                            <img th:if="${personagem.ID == 48}" th:src="@{/Img/Personagens/TrailblazerImaginary.jpg}" />
+                            <img th:if="${personagem.ID == 49}" th:src="@{/Img/Personagens/TrailblazerPhysical.jpg}" />
+                            <img th:if="${personagem.ID == 50}" th:src="@{/Img/Personagens/Welt.jpg}" />
+                            <img th:if="${personagem.ID == 51}" th:src="@{/Img/Personagens/Xueyi.jpg}" />
+                            <img th:if="${personagem.ID == 52}" th:src="@{/Img/Personagens/Yangqing.jpg}" />
+                            <img th:if="${personagem.ID == 53}" th:src="@{/Img/Personagens/Yukong.jpg}" />
                         </div>
                         <div class="col-md-8">
                             <h3>Melhores Estatísticas:</h3>
                             <table>
                                 <tr>
-                                    <td><p>PV:</p></td>
-                                    <td><span>1000</span></td>
-                                    <td><p>Atk:</p></td>
-                                    <td><span>1000</span></td>
+                                    <td><span th:text="${personagem.Estatistica1}"></span></td>
+                                    <td><span th:text="${personagem.Estatistica2}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><p>Def:</p></td>
-                                    <td><span>900</span></td>
-                                    <td><p>Vel:</p></td>
-                                    <td><span>100</span></td>
+                                    <td><span th:text="${personagem.Estatistica3}"></span></td>
+                                    <td><span th:text="${personagem.Estatistica4}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><p>Chance de Crítico:</p></td>
-                                    <td><span>70%</span></td>
-                                    <td><p>Dano Crítico:</p></td>
-                                    <td><span>200%</span></td>
+                                    <td><span th:text="${personagem.Estatistica5}"></span></td>
+                                    <td><span th:text="${personagem.Estatistica6}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><p>Resistência a Efeito:</p></td>
-                                    <td><span>45%</span></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <h2 style="text-align: center">Builds</h2>
-                    <section id="Pg">
-                        <div class="col-md-6">
-                            <h3>Cones:</h3>
-                            <table>
-                                <tr>
-                                    <td><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" /></td>
-                                    <td><p>Cone 1</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" /></td>
-                                    <td><p>Cone 2</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" /></td>
-                                    <td><p>Cone 3</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" /></td>
-                                    <td><p>Cone 4</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" /></td>
-                                    <td><p>Cone 5</p></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Relíquias:</h3>
-                            <table>
-                                <tr>
-                                    <td><img th:src="@{/img/Artefatos/MergulhadoraPioneiradeAguasMortas.png}" /></td>
-                                    <td><p>Relíquia 1</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Artefatos/MergulhadoraPioneiradeAguasMortas.png}" /></td>
-                                    <td><p>Relíquia 2</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Artefatos/MergulhadoraPioneiradeAguasMortas.png}" /></td>
-                                    <td><p>Relíquia 3</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Ornamentos/IzumoGenseieTakamaReinoDivino.png}" /></td>
-                                    <td><p>Ornamento 1</p></td>
-                                </tr>
-                                <tr>
-                                    <td><img th:src="@{/img/Ornamentos/IzumoGenseieTakamaReinoDivino.png}" /></td>
-                                    <td><p>Ornamento 2</p></td>
+                                    <td><span th:text="${personagem.Estatistica7}"></span></td>
                                 </tr>
                             </table>
                         </div>
@@ -120,24 +108,110 @@
                             <h3>Farm necessário para lvl 80:</h3>
                             <table>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 1</p></td>
-                                    <td><spam>x15</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material1 == 'Componentes da Coleção de Sonhos (x12)'}" th:src="@{/img/Material/CaliceDourado/ComponentesdaColecaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material1 == 'Distintivo de Guarda Crinalva (x12)'}" th:src="@{/img/Material/CaliceDourado/DistintivodeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material1 == 'Farrapos de Pensamentos (x12)'}" th:src="@{/img/Material/CaliceDourado/FarraposdePensamentos.png}" />
+                                        <img th:if="${personagem.Material1 == 'Instinto de Ladrão (x12)'}" th:src="@{/img/Material/CaliceDourado/InstintodeLadrao.png}" />
+                                        <img th:if="${personagem.Material1 == 'Módulo de Artífice (x12)'}" th:src="@{/img/Material/CaliceDourado/ModulodeArtifice.png}" />
+                                        <img th:if="${personagem.Material1 == 'Núcleo Apagado (x12)'}" th:src="@{/img/Material/CaliceDourado/NucleoApagado.png}" />
+                                        <img th:if="${personagem.Material1 == 'Peça Antiga (x12)'}" th:src="@{/img/Material/CaliceDourado/PecaAntiga.png}" />
+                                        <img th:if="${personagem.Material1 == 'Scionette Imortal (x12)'}" th:src="@{/img/Material/CaliceDourado/ScionetteImortal.png}" />
+                                        <img th:if="${personagem.Material1 == 'Componentes da Coleção de Sonhos (x15)'}" th:src="@{/img/Material/CaliceDourado/ComponentesdaColecaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material1 == 'Distintivo de Guarda Crinalva (x15)'}" th:src="@{/img/Material/CaliceDourado/DistintivodeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material1 == 'Farrapos de Pensamentos (x15)'}" th:src="@{/img/Material/CaliceDourado/FarraposdePensamentos.png}" />
+                                        <img th:if="${personagem.Material1 == 'Instinto de Ladrão (x15)'}" th:src="@{/img/Material/CaliceDourado/InstintodeLadrao.png}" />
+                                        <img th:if="${personagem.Material1 == 'Módulo de Artífice (x15)'}" th:src="@{/img/Material/CaliceDourado/ModulodeArtifice.png}" />
+                                        <img th:if="${personagem.Material1 == 'Núcleo Apagado (x15)'}" th:src="@{/img/Material/CaliceDourado/NucleoApagado.png}" />
+                                        <img th:if="${personagem.Material1 == 'Peça Antiga (x15)'}" th:src="@{/img/Material/CaliceDourado/PecaAntiga.png}" />
+                                        <img th:if="${personagem.Material1 == 'Scionette Imortal (x15)'}" th:src="@{/img/Material/CaliceDourado/ScionetteImortal.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material1}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 2</p></td>
-                                    <td><spam>x15</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material2 == 'Eixo Antigo (x13)'}" th:src="@{/img/Material/CaliceDourado/EixoAntigo.png}" />
+                                        <img th:if="${personagem.Material2 == 'Esquema do Usurpador (x13)'}" th:src="@{/img/Material/CaliceDourado/EsquemadoUsurpador.png}" />
+                                        <img th:if="${personagem.Material2 == 'Floreciaereo Imortal (x13)'}" th:src="@{/img/Material/CaliceDourado/FloreciaereoImortal.png}" />
+                                        <img th:if="${personagem.Material2 == 'Fragmento de Impressão (x13)'}" th:src="@{/img/Material/CaliceDourado/FragmentodeImpressao.png}" />
+                                        <img th:if="${personagem.Material2 == 'Insígnia de Guarda Crinalva (x13)'}" th:src="@{/img/Material/CaliceDourado/InsigniadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material2 == 'Núcleo Cintilante (x13)'}" th:src="@{/img/Material/CaliceDourado/NucleoCintilante.png}" />
+                                        <img th:if="${personagem.Material2 == 'Roda Cilíndrica Mecânica (x13)'}" th:src="@{/img/Material/CaliceDourado/RodaCilindricaMecanica.png}" />
+                                        <img th:if="${personagem.Material2 == 'Válvula de Fluxo de Sonhos (x13)'}" th:src="@{/img/Material/CaliceDourado/ValvuladeFluxodeSonhos.png}" />
+                                        <img th:if="${personagem.Material2 == 'Eixo Antigo (x15)'}" th:src="@{/img/Material/CaliceDourado/EixoAntigo.png}" />
+                                        <img th:if="${personagem.Material2 == 'Esquema do Usurpador (x15)'}" th:src="@{/img/Material/CaliceDourado/EsquemadoUsurpador.png}" />
+                                        <img th:if="${personagem.Material2 == 'Floreciaereo Imortal (x15)'}" th:src="@{/img/Material/CaliceDourado/FloreciaereoImortal.png}" />
+                                        <img th:if="${personagem.Material2 == 'Fragmento de Impressão (x15)'}" th:src="@{/img/Material/CaliceDourado/FragmentodeImpressao.png}" />
+                                        <img th:if="${personagem.Material2 == 'Insígnia de Guarda Crinalva (x15)'}" th:src="@{/img/Material/CaliceDourado/InsigniadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material2 == 'Núcleo Cintilante (x15)'}" th:src="@{/img/Material/CaliceDourado/NucleoCintilante.png}" />
+                                        <img th:if="${personagem.Material2 == 'Roda Cilíndrica Mecânica (x15)'}" th:src="@{/img/Material/CaliceDourado/RodaCilindricaMecanica.png}" />
+                                        <img th:if="${personagem.Material2 == 'Válvula de Fluxo de Sonhos (x15)'}" th:src="@{/img/Material/CaliceDourado/ValvuladeFluxodeSonhos.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material2}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 3</p></td>
-                                    <td><spam>x65</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material3 == 'Coração Harmonizado Mecânico (x12)'}" th:src="@{/img/Material/CaliceDourado/CoracaoHarmonizadoMecanico.png}" />
+                                        <img th:if="${personagem.Material3 == 'Fragmentos de Desejos (x12)'}" th:src="@{/img/Material/CaliceDourado/FragmentosdeDesejos.png}" />
+                                        <img th:if="${personagem.Material3 == 'Luminivinha Imorta (x12)l'}" th:src="@{/img/Material/CaliceDourado/LuminivinhaImortal.png}" />
+                                        <img th:if="${personagem.Material3 == 'Medalha de Guarda Crinalva (x12)'}" th:src="@{/img/Material/CaliceDourado/MedalhadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material3 == 'Motor Antigo (x12)'}" th:src="@{/img/Material/CaliceDourado/MotorAntigo.png}" />
+                                        <img th:if="${personagem.Material3 == 'Motor de Geração de Sonhos (x12)'}" th:src="@{/img/Material/CaliceDourado/MotordeGeracaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material3 == 'Núcleo Contorcido (x12)'}" th:src="@{/img/Material/CaliceDourado/NucleoContorcido.png}" />
+                                        <img th:if="${personagem.Material3 == 'Vontade do Conquistador (x12)'}" th:src="@{/img/Material/CaliceDourado/VontadedoConquistador.png}" />
+                                        <img th:if="${personagem.Material3 == 'Coração Harmonizado Mecânico (x15)'}" th:src="@{/img/Material/CaliceDourado/CoracaoHarmonizadoMecanico.png}" />
+                                        <img th:if="${personagem.Material3 == 'Fragmentos de Desejos (x15)'}" th:src="@{/img/Material/CaliceDourado/FragmentosdeDesejos.png}" />
+                                        <img th:if="${personagem.Material3 == 'Luminivinha Imortal (x15)'}" th:src="@{/img/Material/CaliceDourado/LuminivinhaImortal.png}" />
+                                        <img th:if="${personagem.Material3 == 'Medalha de Guarda Crinalva (x15)'}" th:src="@{/img/Material/CaliceDourado/MedalhadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material3 == 'Motor Antigo (x15)'}" th:src="@{/img/Material/CaliceDourado/MotorAntigo.png}" />
+                                        <img th:if="${personagem.Material3 == 'Motor de Geração de Sonhos (x15)'}" th:src="@{/img/Material/CaliceDourado/MotordeGeracaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material3 == 'Núcleo Contorcido (x15)'}" th:src="@{/img/Material/CaliceDourado/NucleoContorcido.png}" />
+                                        <img th:if="${personagem.Material3 == 'Vontade do Conquistador (x15)'}" th:src="@{/img/Material/CaliceDourado/VontadedoConquistador.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material3}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Sombra Estagnada</p></td>
-                                    <td><spam>x15</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material4 == 'Bastão de Raio de Transformador (x50)'}" th:src="@{/img/Material/SombraEstagnada/BastaodeRaiodeTransformador.png}" />
+                                        <img th:if="${personagem.Material4 == 'Chifre de Neve (x50)'}" th:src="@{/img/Material/SombraEstagnada/ChifredeNeve.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coração Violento (x50)'}" th:src="@{/img/Material/SombraEstagnada/CoracaoViolento.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coroa de Ouro de uma Sombra do Passado (x50)'}" th:src="@{/img/Material/SombraEstagnada/CoroadeOurodeumaSombradoPassado.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coroa de Raios de uma Sombra do Passado (x50)'}" th:src="@{/img/Material/SombraEstagnada/CoroadeRaiosdeumaSombradoPassado.png}" />
+                                        <img th:if="${personagem.Material4 == 'Decreto de Supressão (x50)'}" th:src="@{/img/Material/SombraEstagnada/DecretodeSupressao.png}" />
+                                        <img th:if="${personagem.Material4 == 'Dentes Quebrados do Lobo de Ferro (x50)'}" th:src="@{/img/Material/SombraEstagnada/DentesQuebradosdoLobodeFerro.png}" />
+                                        <img th:if="${personagem.Material4 == 'Detritos Ascendentes (x50)'}" th:src="@{/img/Material/SombraEstagnada/DetritosAscendentes.png}" />
+                                        <img th:if="${personagem.Material4 == 'Ecostella Profunda (x50)'}" th:src="@{/img/Material/SombraEstagnada/EcostellaProfunda.png}" />
+                                        <img th:if="${personagem.Material4 == 'Endoderme de Quitina (x50)'}" th:src="@{/img/Material/SombraEstagnada/EndodermedeQuitina.png}" />
+                                        <img th:if="${personagem.Material4 == 'Ferro Fundido Vazio (x50)'}" th:src="@{/img/Material/SombraEstagnada/FerroFundidoVazio.png}" />
+                                        <img th:if="${personagem.Material4 == 'Fogareiro de Sonhos (x50)'}" th:src="@{/img/Material/SombraEstagnada/FogareirodeSonhos.png}" />
+                                        <img th:if="${personagem.Material4 == 'Geladeira de Sonhos (x50)'}" th:src="@{/img/Material/SombraEstagnada/GeladeiradeSonhos.png}" />
+                                        <img th:if="${personagem.Material4 == 'Lâmina de Aço Flamejante (x50)'}" th:src="@{/img/Material/SombraEstagnada/LaminadeAcoFlamejante.png}" />
+                                        <img th:if="${personagem.Material4 == 'Olho Tempestuoso (x50)'}" th:src="@{/img/Material/SombraEstagnada/OlhoTempestuoso.png}" />
+                                        <img th:if="${personagem.Material4 == 'Prego do Macaco (x50)'}" th:src="@{/img/Material/SombraEstagnada/PregodoMacaco.png}" />
+                                        <img th:if="${personagem.Material4 == 'Quitina Gélida (x50)'}" th:src="@{/img/Material/SombraEstagnada/QuitinaGelida.png}" />
+                                        <img th:if="${personagem.Material4 == 'Token do Submundo (x50)'}" th:src="@{/img/Material/SombraEstagnada/TokendoSubmundo.png}" />
+                                        <img th:if="${personagem.Material4 == 'Visto de Trabalho da CPI (x50)'}" th:src="@{/img/Material/SombraEstagnada/VistodeTrabalhodaCPI.png}" />
+                                        <img th:if="${personagem.Material4 == 'Bastão de Raio de Transformador (x65)'}" th:src="@{/img/Material/SombraEstagnada/BastaodeRaiodeTransformador.png}" />
+                                        <img th:if="${personagem.Material4 == 'Chifre de Neve (x65)'}" th:src="@{/img/Material/SombraEstagnada/ChifredeNeve.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coração Violento (x65)'}" th:src="@{/img/Material/SombraEstagnada/CoracaoViolento.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coroa de Ouro de uma Sombra do Passado (x65)'}" th:src="@{/img/Material/SombraEstagnada/CoroadeOurodeumaSombradoPassado.png}" />
+                                        <img th:if="${personagem.Material4 == 'Coroa de Raios de uma Sombra do Passado (x65)'}" th:src="@{/img/Material/SombraEstagnada/CoroadeRaiosdeumaSombradoPassado.png}" />
+                                        <img th:if="${personagem.Material4 == 'Decreto de Supressão (x65)'}" th:src="@{/img/Material/SombraEstagnada/DecretodeSupressao.png}" />
+                                        <img th:if="${personagem.Material4 == 'Dentes Quebrados do Lobo de Ferro (x65)'}" th:src="@{/img/Material/SombraEstagnada/DentesQuebradosdoLobodeFerro.png}" />
+                                        <img th:if="${personagem.Material4 == 'Detritos Ascendentes (x65)'}" th:src="@{/img/Material/SombraEstagnada/DetritosAscendentes.png}" />
+                                        <img th:if="${personagem.Material4 == 'Ecostella Profunda (x65)'}" th:src="@{/img/Material/SombraEstagnada/EcostellaProfunda.png}" />
+                                        <img th:if="${personagem.Material4 == 'Endoderme de Quitina (x65)'}" th:src="@{/img/Material/SombraEstagnada/EndodermedeQuitina.png}" />
+                                        <img th:if="${personagem.Material4 == 'Ferro Fundido Vazio (x65)'}" th:src="@{/img/Material/SombraEstagnada/FerroFundidoVazio.png}" />
+                                        <img th:if="${personagem.Material4 == 'Fogareiro de Sonhos (x65)'}" th:src="@{/img/Material/SombraEstagnada/FogareirodeSonhos.png}" />
+                                        <img th:if="${personagem.Material4 == 'Geladeira de Sonhos (x65)'}" th:src="@{/img/Material/SombraEstagnada/GeladeiradeSonhos.png}" />
+                                        <img th:if="${personagem.Material4 == 'Lâmina de Aço Flamejante (x65)'}" th:src="@{/img/Material/SombraEstagnada/LaminadeAcoFlamejante.png}" />
+                                        <img th:if="${personagem.Material4 == 'Olho Tempestuoso (x65)'}" th:src="@{/img/Material/SombraEstagnada/OlhoTempestuoso.png}" />
+                                        <img th:if="${personagem.Material4 == 'Prego do Macaco (x65)'}" th:src="@{/img/Material/SombraEstagnada/PregodoMacaco.png}" />
+                                        <img th:if="${personagem.Material4 == 'Quitina Gélida (x65)'}" th:src="@{/img/Material/SombraEstagnada/QuitinaGelida.png}" />
+                                        <img th:if="${personagem.Material4 == 'Token do Submundo (x65)'}" th:src="@{/img/Material/SombraEstagnada/TokendoSubmundo.png}" />
+                                        <img th:if="${personagem.Material4 == 'Visto de Trabalho da CPI (x65)'}" th:src="@{/img/Material/SombraEstagnada/VistodeTrabalhodaCPI.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material4}"></span></td>
                                 </tr>
                             </table>
                         </div>
@@ -145,36 +219,172 @@
                             <h3>Farm necessário para Rastros</h3>
                             <table>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Rubro 1</p></td>
-                                    <td><spam>x15</spam></td>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 1</p></td>
-                                    <td><spam>x41</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material5 == 'Bala Meteórica (x12)'}" th:src="@{/img/Material/CaliceRubro/BalaMeteorica.png}" />
+                                        <img th:if="${personagem.Material5 == 'Chave da Inspiração (x12)'}" th:src="@{/img/Material/CaliceRubro/ChavedaInspiracao.png}" />
+                                        <img th:if="${personagem.Material5 == 'Espirito de Fogo (x12)'}" th:src="@{/img/Material/CaliceRubro/EspiritodeFogo.png}" />
+                                        <img th:if="${personagem.Material5 == 'Esboço (x12)'}" th:src="@{/img/Material/CaliceRubro/Esboco.png}" />
+                                        <img th:if="${personagem.Material5 == 'Dentes de Borisin (x12)'}" th:src="@{/img/Material/CaliceRubro/DentesdeBorisin.png}" />
+                                        <img th:if="${personagem.Material5 == 'Flecha de Caça-feras (x12)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacaferas.png}" />
+                                        <img th:if="${personagem.Material5 == 'Lâmina Despedaçada (x12)'}" th:src="@{/img/Material/CaliceRubro/LaminaDespedacada.png}" />
+                                        <img th:if="${personagem.Material5 == 'Melodia Harmônica (x12)'}" th:src="@{/img/Material/CaliceRubro/MelodiaHarmonica.png}" />
+                                        <img th:if="${personagem.Material5 == 'Nota do Firmamento (x12)'}" th:src="@{/img/Material/CaliceRubro/NotadoFirmamento.png}" />
+                                        <img th:if="${personagem.Material5 == 'Semente da Árvore Alienigena (x12)'}" th:src="@{/img/Material/CaliceRubro/SementedaArvoreAlienigena.png}" />
+                                        <img th:if="${personagem.Material5 == 'Semente da Abundância (x12)'}" th:src="@{/img/Material/CaliceRubro/SementedaAbundancia.png}" />
+                                        <img th:if="${personagem.Material5 == 'Poeira Estelar Dispersa (x12)'}" th:src="@{/img/Material/CaliceRubro/PoeiraEstelarDispersa.png}" />
+                                        <img th:if="${personagem.Material5 == 'Obsidiana do Temor (x12)'}" th:src="@{/img/Material/CaliceRubro/ObsidianadoTemor.png}" />
+                                        <img th:if="${personagem.Material5 == 'Resistência de Bronze (x12)'}" th:src="@{/img/Material/CaliceRubro/ResistenciadeBronze.png}" />
+                                        <img th:if="${personagem.Material5 == 'Bala Meteórica (x18)'}" th:src="@{/img/Material/CaliceRubro/BalaMeteorica.png}" />
+                                        <img th:if="${personagem.Material5 == 'Chave da Inspiração (x18)'}" th:src="@{/img/Material/CaliceRubro/ChavedaInspiracao.png}" />
+                                        <img th:if="${personagem.Material5 == 'Espirito de Fogo (x18)'}" th:src="@{/img/Material/CaliceRubro/EspiritodeFogo.png}" />
+                                        <img th:if="${personagem.Material5 == 'Esboço (x18)'}" th:src="@{/img/Material/CaliceRubro/Esboco.png}" />
+                                        <img th:if="${personagem.Material5 == 'Dentes de Borisin (x18)'}" th:src="@{/img/Material/CaliceRubro/DentesdeBorisin.png}" />
+                                        <img th:if="${personagem.Material5 == 'Flecha de Caça-feras (x18)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacaferas.png}" />
+                                        <img th:if="${personagem.Material5 == 'Lâmina Despedaçada (x18)'}" th:src="@{/img/Material/CaliceRubro/LaminaDespedacada.png}" />
+                                        <img th:if="${personagem.Material5 == 'Melodia Harmônica (x18)'}" th:src="@{/img/Material/CaliceRubro/MelodiaHarmonica.png}" />
+                                        <img th:if="${personagem.Material5 == 'Nota do Firmamento (x18)'}" th:src="@{/img/Material/CaliceRubro/NotadoFirmamento.png}" />
+                                        <img th:if="${personagem.Material5 == 'Semente da Árvore Alienigena (x18)'}" th:src="@{/img/Material/CaliceRubro/SementedaArvoreAlienigena.png}" />
+                                        <img th:if="${personagem.Material5 == 'Semente da Abundância (x18)'}" th:src="@{/img/Material/CaliceRubro/SementedaAbundancia.png}" />
+                                        <img th:if="${personagem.Material5 == 'Poeira Estelar Dispersa (x18)'}" th:src="@{/img/Material/CaliceRubro/PoeiraEstelarDispersa.png}" />
+                                        <img th:if="${personagem.Material5 == 'Obsidiana do Temor (x18)'}" th:src="@{/img/Material/CaliceRubro/ObsidianadoTemor.png}" />
+                                        <img th:if="${personagem.Material5 == 'Resistência de Bronze (x18)'}" th:src="@{/img/Material/CaliceRubro/ResistenciadeBronze.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material5}"></span></td>
+                                    <td>
+                                        <img th:if="${personagem.Material6 == 'Componentes da Coleção de Sonhos (x26)'}" th:src="@{/img/Material/CaliceDourado/ComponentesdaColecaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material6 == 'Distintivo de Guarda Crinalva (x26)'}" th:src="@{/img/Material/CaliceDourado/DistintivodeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material6 == 'Farrapos de Pensamentos (x26)'}" th:src="@{/img/Material/CaliceDourado/FarraposdePensamentos.png}" />
+                                        <img th:if="${personagem.Material6 == 'Instinto de Ladrão (x26)'}" th:src="@{/img/Material/CaliceDourado/InstintodeLadrao.png}" />
+                                        <img th:if="${personagem.Material6 == 'Módulo de Artífice (x26)'}" th:src="@{/img/Material/CaliceDourado/ModulodeArtifice.png}" />
+                                        <img th:if="${personagem.Material6 == 'Núcleo Apagado (x26)'}" th:src="@{/img/Material/CaliceDourado/NucleoApagado.png}" />
+                                        <img th:if="${personagem.Material6 == 'Peça Antiga (x26)'}" th:src="@{/img/Material/CaliceDourado/PecaAntiga.png}" />
+                                        <img th:if="${personagem.Material6 == 'Scionette Imortal (x26)'}" th:src="@{/img/Material/CaliceDourado/ScionetteImortal.png}" />
+                                        <img th:if="${personagem.Material6 == 'Componentes da Coleção de Sonhos (x41)'}" th:src="@{/img/Material/CaliceDourado/ComponentesdaColecaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material6 == 'Distintivo de Guarda Crinalva (x41)'}" th:src="@{/img/Material/CaliceDourado/DistintivodeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material6 == 'Farrapos de Pensamentos (x41)'}" th:src="@{/img/Material/CaliceDourado/FarraposdePensamentos.png}" />
+                                        <img th:if="${personagem.Material6 == 'Instinto de Ladrão (x41)'}" th:src="@{/img/Material/CaliceDourado/InstintodeLadrao.png}" />
+                                        <img th:if="${personagem.Material6 == 'Módulo de Artífice (x41)'}" th:src="@{/img/Material/CaliceDourado/ModulodeArtifice.png}" />
+                                        <img th:if="${personagem.Material6 == 'Núcleo Apagado (x41)'}" th:src="@{/img/Material/CaliceDourado/NucleoApagado.png}" />
+                                        <img th:if="${personagem.Material6 == 'Peça Antiga (x41)'}" th:src="@{/img/Material/CaliceDourado/PecaAntiga.png}" />
+                                        <img th:if="${personagem.Material6 == 'Scionette Imortal (x41)'}" th:src="@{/img/Material/CaliceDourado/ScionetteImortal.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material6}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Rubro 2</p></td>
-                                    <td><spam>x72</spam></td>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 2</p></td>
-                                    <td><spam>x56</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material7 == 'Broto da Vida (x54)'}" th:src="@{/img/Material/CaliceRubro/BrotodaVida.png}" />
+                                        <img th:if="${personagem.Material7 == 'Chave do Conhecimento (x54)'}" th:src="@{/img/Material/CaliceRubro/ChavedoConhecimento.png}" />
+                                        <img th:if="${personagem.Material7 == 'Contorno Dinâmico (x54)'}" th:src="@{/img/Material/CaliceRubro/ContornoDinamico.png}" />
+                                        <img th:if="${personagem.Material7 == 'Flecha de Caça-demonio (x54)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacademonio.png}" />
+                                        <img th:if="${personagem.Material7 == 'Expiração do Destino (x54)'}" th:src="@{/img/Material/CaliceRubro/ExpiracaodoDestino.png}" />
+                                        <img th:if="${personagem.Material7 == 'Essência de Chama Estelar (x54)'}" th:src="@{/img/Material/CaliceRubro/EssenciadeChamaEstelar.png}" />
+                                        <img th:if="${personagem.Material7 == 'Dentes e Serra com Lupitoxina (x54)'}" th:src="@{/img/Material/CaliceRubro/DenteseSerracomLupitoxina.png}" />
+                                        <img th:if="${personagem.Material7 == 'Hino Ancestral (x54)'}" th:src="@{/img/Material/CaliceRubro/HinoAncestral.png}" />
+                                        <img th:if="${personagem.Material7 == 'Juramento de Aço (x54)'}" th:src="@{/img/Material/CaliceRubro/JuramentodeAco.png}" />
+                                        <img th:if="${personagem.Material7 == 'Lâmina Inerte (x54)'}" th:src="@{/img/Material/CaliceRubro/LaminaInerte.png}" />
+                                        <img th:if="${personagem.Material7 == 'Mel Nutricional (x54)'}" th:src="@{/img/Material/CaliceRubro/MelNutricional.png}" />
+                                        <img th:if="${personagem.Material7 == 'Meteorito de Cristal (x54)'}" th:src="@{/img/Material/CaliceRubro/MeteoritodeCristal.png}" />
+                                        <img th:if="${personagem.Material7 == 'Obsidiana da Desolação (x54)'}" th:src="@{/img/Material/CaliceRubro/Obsidianad Desolacao.png}" />
+                                        <img th:if="${personagem.Material5 == 'Seção Celestial (x54)'}" th:src="@{/img/Material/CaliceRubro/SecaoCelestial.png}" />
+                                        <img th:if="${personagem.Material7 == 'Broto da Vida (x69)'}" th:src="@{/img/Material/CaliceRubro/BrotodaVida.png}" />
+                                        <img th:if="${personagem.Material7 == 'Chave do Conhecimento (x69)'}" th:src="@{/img/Material/CaliceRubro/ChavedoConhecimento.png}" />
+                                        <img th:if="${personagem.Material7 == 'Contorno Dinâmico (x69)'}" th:src="@{/img/Material/CaliceRubro/ContornoDinamico.png}" />
+                                        <img th:if="${personagem.Material7 == 'Flecha de Caça-demonio (x69)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacademonio.png}" />
+                                        <img th:if="${personagem.Material7 == 'Expiração do Destino (x69)'}" th:src="@{/img/Material/CaliceRubro/ExpiracaodoDestino.png}" />
+                                        <img th:if="${personagem.Material7 == 'Essência de Chama Estelar (x69)'}" th:src="@{/img/Material/CaliceRubro/EssenciadeChamaEstelar.png}" />
+                                        <img th:if="${personagem.Material7 == 'Dentes e Serra com Lupitoxina (x69)'}" th:src="@{/img/Material/CaliceRubro/DenteseSerracomLupitoxina.png}" />
+                                        <img th:if="${personagem.Material7 == 'Hino Ancestral (x69)'}" th:src="@{/img/Material/CaliceRubro/HinoAncestral.png}" />
+                                        <img th:if="${personagem.Material7 == 'Juramento de Aço (x69)'}" th:src="@{/img/Material/CaliceRubro/JuramentodeAco.png}" />
+                                        <img th:if="${personagem.Material7 == 'Lâmina Inerte (x69)'}" th:src="@{/img/Material/CaliceRubro/LaminaInerte.png}" />
+                                        <img th:if="${personagem.Material7 == 'Mel Nutricional (x69)'}" th:src="@{/img/Material/CaliceRubro/MelNutricional.png}" />
+                                        <img th:if="${personagem.Material7 == 'Meteorito de Cristal (x69)'}" th:src="@{/img/Material/CaliceRubro/MeteoritodeCristal.png}" />
+                                        <img th:if="${personagem.Material7 == 'Obsidiana da Desolação (x69)'}" th:src="@{/img/Material/CaliceRubro/Obsidianad Desolacao.png}" />
+                                        <img th:if="${personagem.Material5 == 'Seção Celestial (x69)'}" th:src="@{/img/Material/CaliceRubro/SecaoCelestial.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material7}"></span></td>
+                                    <td>
+                                        <img th:if="${personagem.Material8 == 'Eixo Antigo (x42)'}" th:src="@{/img/Material/CaliceDourado/EixoAntigo.png}" />
+                                        <img th:if="${personagem.Material8 == 'Esquema do Usurpador (x42)'}" th:src="@{/img/Material/CaliceDourado/EsquemadoUsurpador.png}" />
+                                        <img th:if="${personagem.Material8 == 'Floreciaereo Imortal (x42)'}" th:src="@{/img/Material/CaliceDourado/FloreciaereoImortal.png}" />
+                                        <img th:if="${personagem.Material8 == 'Fragmento de Impressão (x42)'}" th:src="@{/img/Material/CaliceDourado/FragmentodeImpressao.png}" />
+                                        <img th:if="${personagem.Material8 == 'Insígnia de Guarda Crinalva (x42)'}" th:src="@{/img/Material/CaliceDourado/InsigniadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material8 == 'Núcleo Cintilante (x42)'}" th:src="@{/img/Material/CaliceDourado/NucleoCintilante.png}" />
+                                        <img th:if="${personagem.Material8 == 'Roda Cilíndrica Mecânica (x42)'}" th:src="@{/img/Material/CaliceDourado/RodaCilindricaMecanica.png}" />
+                                        <img th:if="${personagem.Material8 == 'Válvula de Fluxo de Sonhos (x42)'}" th:src="@{/img/Material/CaliceDourado/ValvuladeFluxodeSonhos.png}" />
+                                        <img th:if="${personagem.Material8 == 'Eixo Antigo (x56)'}" th:src="@{/img/Material/CaliceDourado/EixoAntigo.png}" />
+                                        <img th:if="${personagem.Material8 == 'Esquema do Usurpador (x56)'}" th:src="@{/img/Material/CaliceDourado/EsquemadoUsurpador.png}" />
+                                        <img th:if="${personagem.Material8 == 'Floreciaereo Imortal (x56)'}" th:src="@{/img/Material/CaliceDourado/FloreciaereoImortal.png}" />
+                                        <img th:if="${personagem.Material8 == 'Fragmento de Impressão (x56)'}" th:src="@{/img/Material/CaliceDourado/FragmentodeImpressao.png}" />
+                                        <img th:if="${personagem.Material8 == 'Insígnia de Guarda Crinalva (x56)'}" th:src="@{/img/Material/CaliceDourado/InsigniadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material8 == 'Núcleo Cintilante (x56)'}" th:src="@{/img/Material/CaliceDourado/NucleoCintilante.png}" />
+                                        <img th:if="${personagem.Material8 == 'Roda Cilíndrica Mecânica (x56)'}" th:src="@{/img/Material/CaliceDourado/RodaCilindricaMecanica.png}" />
+                                        <img th:if="${personagem.Material8 == 'Válvula de Fluxo de Sonhos (x56)'}" th:src="@{/img/Material/CaliceDourado/ValvuladeFluxodeSonhos.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material8}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Rubro 3</p></td>
-                                    <td><spam>x139</spam></td>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Cálice Dourado 3</p></td>
-                                    <td><spam>x58</spam></td>
+                                    <td>
+                                        <img th:if="${personagem.Material9 == 'Âmbar Divino (x105)'}" th:src="@{/img/Material/CaliceRubro/AmbarDivino.png}" />
+                                        <img th:if="${personagem.Material9 == 'Canino de Loucura da Lua (x105)'}" th:src="@{/img/Material/CaliceRubro/CaninodeLoucuradaLua.png}" />
+                                        <img th:if="${personagem.Material9 == 'Chave da Sabedoria (x105)'}" th:src="@{/img/Material/CaliceRubro/ChavedaSabedoria.png}" />
+                                        <img th:if="${personagem.Material9 == 'Esboço Colorido Primoroso (x105)'}" th:src="@{/img/Material/CaliceRubro/EsbocoColoridoPrimoroso.png}" />
+                                        <img th:if="${personagem.Material9 == 'Flecha de Caça-estrela (x105)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacaestrela.png}" />
+                                        <img th:if="${personagem.Material9 == 'Flor da Eterndade (x105)'}" th:src="@{/img/Material/CaliceRubro/FlordaEterndade.png}" />
+                                        <img th:if="${personagem.Material9 == 'Fruta Inumerável (x105)'}" th:src="@{/img/Material/CaliceRubro/FrutaInumeravel.png}" />
+                                        <img th:if="${personagem.Material9 == 'Melodia Celestial (x105)'}" th:src="@{/img/Material/CaliceRubro/MelodiaCelestial.png}" />
+                                        <img th:if="${personagem.Material9 == 'Lâmina Destruidora de Mundos (x105)'}" th:src="@{/img/Material/CaliceRubro/LaminaDestruidoradeMundos.png}" />
+                                        <img th:if="${personagem.Material9 == 'Obsidiana da Obcessão (x105)'}" th:src="@{/img/Material/CaliceRubro/ObsidianadaObcessao.png}" />
+                                        <img th:if="${personagem.Material9 == 'Proteção de Âmbar (x105)'}" th:src="@{/img/Material/CaliceRubro/ProtecaodeAmbar.png}" />
+                                        <img th:if="${personagem.Material9 == 'Incinerador do Paraíso (x105)'}" th:src="@{/img/Material/CaliceRubro/IncineradordoParaiso.png}" />
+                                        <img th:if="${personagem.Material9 == 'Sinfonia Stellaris (x105)'}" th:src="@{/img/Material/CaliceRubro/SinfoniaStellaris.png}" />
+                                        <img th:if="${personagem.Material9 == 'Tiro Contra-Temporal (x105)'}" th:src="@{/img/Material/CaliceRubro/TiroContraTemporal.png}" />
+                                        <img th:if="${personagem.Material9 == 'Âmbar Divino (x149)'}" th:src="@{/img/Material/CaliceRubro/AmbarDivino.png}" />
+                                        <img th:if="${personagem.Material9 == 'Canino de Loucura da Lua (x149)'}" th:src="@{/img/Material/CaliceRubro/CaninodeLoucuradaLua.png}" />
+                                        <img th:if="${personagem.Material9 == 'Chave da Sabedoria (x149)'}" th:src="@{/img/Material/CaliceRubro/ChavedaSabedoria.png}" />
+                                        <img th:if="${personagem.Material9 == 'Esboço Colorido Primoroso (x149)'}" th:src="@{/img/Material/CaliceRubro/EsbocoColoridoPrimoroso.png}" />
+                                        <img th:if="${personagem.Material9 == 'Flecha de Caça-estrela (x149)'}" th:src="@{/img/Material/CaliceRubro/FlechadeCacaestrela.png}" />
+                                        <img th:if="${personagem.Material9 == 'Flor da Eterndade (x149)'}" th:src="@{/img/Material/CaliceRubro/FlordaEterndade.png}" />
+                                        <img th:if="${personagem.Material9 == 'Fruta Inumerável (x149)'}" th:src="@{/img/Material/CaliceRubro/FrutaInumeravel.png}" />
+                                        <img th:if="${personagem.Material9 == 'Melodia Celestial (x149)'}" th:src="@{/img/Material/CaliceRubro/MelodiaCelestial.png}" />
+                                        <img th:if="${personagem.Material9 == 'Lâmina Destruidora de Mundos (x149)'}" th:src="@{/img/Material/CaliceRubro/LaminaDestruidoradeMundos.png}" />
+                                        <img th:if="${personagem.Material9 == 'Obsidiana da Obcessão (x149)'}" th:src="@{/img/Material/CaliceRubro/ObsidianadaObcessao.png}" />
+                                        <img th:if="${personagem.Material9 == 'Proteção de Âmbar (x149)'}" th:src="@{/img/Material/CaliceRubro/ProtecaodeAmbar.png}" />
+                                        <img th:if="${personagem.Material9 == 'Incinerador do Paraíso (x149)'}" th:src="@{/img/Material/CaliceRubro/IncineradordoParaiso.png}" />
+                                        <img th:if="${personagem.Material9 == 'Sinfonia Stellaris (x149)'}" th:src="@{/img/Material/CaliceRubro/SinfoniaStellaris.png}" />
+                                        <img th:if="${personagem.Material9 == 'Tiro Contra-Temporal (x149)'}" th:src="@{/img/Material/CaliceRubro/TiroContraTemporal.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material9}"></span></td>
+                                    <td>
+                                        <img th:if="${personagem.Material10 == 'Coração Harmonizado Mecânico (x42)'}" th:src="@{/img/Material/CaliceDourado/CoracaoHarmonizadoMecanico.png}" />
+                                        <img th:if="${personagem.Material10 == 'Fragmentos de Desejos (x42)'}" th:src="@{/img/Material/CaliceDourado/FragmentosdeDesejos.png}" />
+                                        <img th:if="${personagem.Material10 == 'Luminivinha Imortal (x42)'}" th:src="@{/img/Material/CaliceDourado/LuminivinhaImortal.png}" />
+                                        <img th:if="${personagem.Material10 == 'Medalha de Guarda Crinalva (x42)'}" th:src="@{/img/Material/CaliceDourado/MedalhadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material10 == 'Motor Antigo (x42)'}" th:src="@{/img/Material/CaliceDourado/MotorAntigo.png}" />
+                                        <img th:if="${personagem.Material10 == 'Motor de Geração de Sonhos (x42)'}" th:src="@{/img/Material/CaliceDourado/MotordeGeracaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material10 == 'Núcleo Contorcido (x42)'}" th:src="@{/img/Material/CaliceDourado/NucleoContorcido.png}" />
+                                        <img th:if="${personagem.Material10 == 'Vontade do Conquistador (x42)'}" th:src="@{/img/Material/CaliceDourado/VontadedoConquistador.png}" />
+                                        <img th:if="${personagem.Material10 == 'Coração Harmonizado Mecânico (x58)'}" th:src="@{/img/Material/CaliceDourado/CoracaoHarmonizadoMecanico.png}" />
+                                        <img th:if="${personagem.Material10 == 'Fragmentos de Desejos (x58)'}" th:src="@{/img/Material/CaliceDourado/FragmentosdeDesejos.png}" />
+                                        <img th:if="${personagem.Material10 == 'Luminivinha Imortal (x58)'}" th:src="@{/img/Material/CaliceDourado/LuminivinhaImortal.png}" />
+                                        <img th:if="${personagem.Material10 == 'Medalha de Guarda Crinalva (x58)'}" th:src="@{/img/Material/CaliceDourado/MedalhadeGuardaCrinalva.png}" />
+                                        <img th:if="${personagem.Material10 == 'Motor Antigo (x58)'}" th:src="@{/img/Material/CaliceDourado/MotorAntigo.png}" />
+                                        <img th:if="${personagem.Material10 == 'Motor de Geração de Sonhos (x58)'}" th:src="@{/img/Material/CaliceDourado/MotordeGeracaodeSonhos.png}" />
+                                        <img th:if="${personagem.Material10 == 'Núcleo Contorcido (x58)'}" th:src="@{/img/Material/CaliceDourado/NucleoContorcido.png}" />
+                                        <img th:if="${personagem.Material10 == 'Vontade do Conquistador (x58)'}" th:src="@{/img/Material/CaliceDourado/VontadedoConquistador.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material10}"></span></td>
                                 </tr>
                                 <tr>
+                                    <td>
+                                        <img th:if="${personagem.Material11 == 'Arrependimento do Ochema Infinito (x12)'}" th:src="@{/img/Material/EcosdaGuerra/ArrependimentodoOchemaInfinito.png}" />
+                                        <img th:if="${personagem.Material11 == 'Eco Perdido do Desejo Partilhado (x12)'}" th:src="@{/img/Material/EcosdaGuerra/EcoPerdidodoDesejoPartilhado.png}" />
+                                        <img th:if="${personagem.Material11 == 'Lamento do Guardião (x12)'}" th:src="@{/img/Material/EcosdaGuerra/LamentodoGuardiao.png}" />
+                                        <img th:if="${personagem.Material11 == 'Males do Passado do Desastre do Planeta da Perfuração (x12)'}" th:src="@{/img/Material/EcosdaGuerra/MalesdoPassadodoDesastredoPlanetadaPerfuracao.png}" />
+                                        <img th:if="${personagem.Material11 == 'Rota Final do Destruidor (x12)'}" th:src="@{/img/Material/EcosdaGuerra/RotaFinaldoDestruidor.png}" />
+                                    </td>
+                                    <td><span th:text="${personagem.Material11}"></span></td>
                                     <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Ecos de Guerra</p></td>
-                                    <td><spam>x12</spam></td>
-                                    <td><img th:src="@{/img/Material/RastrosdoDestino.png}" /></td>
-                                    <td><p>Rastros de Destino</p></td>
-                                    <td><spam>x11</spam></td>
+                                    <td><span th:text="${personagem.Material12}"></span></td>
                                 </tr>
                             </table>
                         </div>

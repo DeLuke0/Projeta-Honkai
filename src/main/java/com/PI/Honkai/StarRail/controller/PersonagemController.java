@@ -1,15 +1,16 @@
 package com.PI.Honkai.StarRail.controller;
+import com.PI.Honkai.StarRail.model.Personagem;
 import com.PI.Honkai.StarRail.service.PersonagemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class PersonagemController {
     @Autowired
-    PersonagemService ps;
+    private final PersonagemService ps = null;
     
     @GetMapping("/index") 
     public String listaPersonagens(Model model) { 
@@ -23,10 +24,10 @@ public class PersonagemController {
         return "tierList"; 
     }
     
-    @GetMapping("/personagemPg") 
-    public String listaPersonagem(Model model, @RequestParam String idPersonagem) { 
-        Integer id = Integer.parseInt(idPersonagem);
-        model.addAttribute("listaPersonagens", ps.getPersonagemId(id)); 
+    @GetMapping("/personagemPg/{id}") 
+    public String listaPersonagem(@PathVariable(value = "id") Integer id, Model model) { 
+        Personagem p = ps.getPersonagemId(id);
+        model.addAttribute("personagem", p); 
         return "personagemPg"; 
     }
 }

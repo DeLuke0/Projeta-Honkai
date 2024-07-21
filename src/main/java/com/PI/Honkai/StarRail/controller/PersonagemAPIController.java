@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/personagem")
 public class PersonagemAPIController {
     @Autowired
-    PersonagemService ps;
+    private final PersonagemService ps = null;
     
     @GetMapping("/listar") 
     public ResponseEntity<List> getAllPersonagens() { 

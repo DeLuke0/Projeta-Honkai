@@ -5,24 +5,25 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
-import java.util.ArrayList;
+import java.io.Serializable;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity 
 @Table(name="Reliquia") 
-public class Reliquia {
+public class Reliquia{
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int ID;
+    private Integer ID;
     @NotBlank(message="Nome obrigatório") 
     private String Nome;
-    @NotBlank(message="Tipo obrigatório") 
-    private String Tipo;
-    @NotBlank(message="Bônus obrigatório") 
-    public static ArrayList<String> Bonus = new ArrayList();
+    @NotBlank(message="Bônus de duas peças obrigatório") 
+    private String Bonus1;
+    private String Bonus2;
 }

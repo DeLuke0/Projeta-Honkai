@@ -23,7 +23,7 @@ public class ReliquiaAPIController {
     } 
     
     @GetMapping("/pesquisar/{id}") 
-    public ResponseEntity<Reliquia> getReliquiasById(@PathVariable Integer id) { 
+    public ResponseEntity<Reliquia> getReliquiasById(@PathVariable(value = "id") Integer id) { 
         Reliquia r = rs.getReliquiaId(id); 
         return new ResponseEntity<>(r, HttpStatus.OK); 
     }

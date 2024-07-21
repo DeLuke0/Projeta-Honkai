@@ -20,13 +20,51 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <h1>NOME</h1>
+                    <h1><span th:text='${reliquia.Nome}'></span></h1>
                     <section id="Pg">
-                        <div class="col-md-6">
-                            <img th:src="@{/Img/Cones/Abundancia/Cornucopia.png}" />
+                        <div class="col-md-6"></br>
+                            <img th:if="${reliquia.ID == 1}" th:src="@{/Img/Artefatos/AguiadaLinhadoCrepusculo.png}" />
+                            <img th:if="${reliquia.ID == 2}" th:src="@{/Img/Artefatos/AndarilhodoDesertodaBandidagem.png}" />
+                            <img th:if="${reliquia.ID == 3}" th:src="@{/Img/Artefatos/ArtesaodeFogodaForjadeLava.png}" />
+                            <img th:if="${reliquia.ID == 4}" th:src="@{/Img/Artefatos/BandaTrovaoCrepitante.png}" />
+                            <img th:if="${reliquia.ID == 5}" th:src="@{/Img/Artefatos/CaçadordaFlorestaGlacial.png}" />
+                            <img th:if="${reliquia.ID == 6}" th:src="@{/Img/Artefatos/CampeadeBoxedeRua.png}" />
+                            <img th:if="${reliquia.ID == 7}" th:src="@{/Img/Artefatos/CavalariadeFerroContraaPraga.png}" />
+                            <img th:if="${reliquia.ID == 8}" th:src="@{/Img/Artefatos/CavaleiradoPalaciodaPureza.png}" />
+                            <img th:if="${reliquia.ID == 9}" th:src="@{/Img/Artefatos/CoragemComoVentoeNuvem.png}" />
+                            <img th:if="${reliquia.ID == 10}" th:src="@{/Img/Artefatos/DicipulaLongeva.png}" />
+                            <img th:if="${reliquia.ID == 11}" th:src="@{/Img/Artefatos/GeniodasEstrelasBrilhantes.png}" />
+                            <img th:if="${reliquia.ID == 12}" th:src="@{/Img/Artefatos/GraoDuqueemChamas.png}" />
+                            <img th:if="${reliquia.ID == 13}" th:src="@{/Img/Artefatos/GuardadaNeveUivante.png}" />
+                            <img th:if="${reliquia.ID == 14}" th:src="@{/Img/Artefatos/LadraodaChuvadeMeteoros.png}" />
+                            <img th:if="${reliquia.ID == 15}" th:src="@{/Img/Artefatos/MenssageiraAtravessandooHackerspace.png}" />
+                            <img th:if="${reliquia.ID == 16}" th:src="@{/Img/Artefatos/MergulhadoraPioneiradeAguasMortas.png}" />
+                            <img th:if="${reliquia.ID == 17}" th:src="@{/Img/Artefatos/MosqueteiradotrigoSelvagem.png}" />
+                            <img th:if="${reliquia.ID == 18}" th:src="@{/Img/Artefatos/PrisioneiroemConfinamentoProfundo.png}" />
+                            <img th:if="${reliquia.ID == 19}" th:src="@{/Img/Artefatos/RelojoeiroMestredeMaquinacoesdeSonhos.png}" />
+                            <img th:if="${reliquia.ID == 20}" th:src="@{/Img/Artefatos/TranseuntedaNuvemErrante.png}" />
+                            <img th:if="${reliquia.ID == 21}" th:src="@{/Img/Ornamentos/ArenaRutilante.png}" />
+                            <img th:if="${reliquia.ID == 22}" th:src="@{/Img/Ornamentos/BelobogdosArquitetos.png}" />
+                            <img th:if="${reliquia.ID == 23}" th:src="@{/Img/Ornamentos/DiferenciadorCelestial.png}" />
+                            <img th:if="${reliquia.ID == 24}" th:src="@{/Img/Ornamentos/DuranDinastiadosLobosCorredores.png}" />
+                            <img th:if="${reliquia.ID == 25}" th:src="@{/Img/Ornamentos/EmpresaMercantilPanCosmica.png}" />
+                            <img th:if="${reliquia.ID == 26}" th:src="@{/Img/Ornamentos/EstacaodeVedacaoEspacial.png}" />
+                            <img th:if="${reliquia.ID == 27}" th:src="@{/Img/Ornamentos/ForjadaLanternaKalpagni.png}" />
+                            <img th:if="${reliquia.ID == 28}" th:src="@{/Img/Ornamentos/FrotadosEternos.png}" />
+                            <img th:if="${reliquia.ID == 29}" th:src="@{/Img/Ornamentos/IzumoGenseieTakamaReinoDivino.png}" />
+                            <img th:if="${reliquia.ID == 30}" th:src="@{/Img/Ornamentos/LinhadeFrenteFirmamentodeGlamoth.png}" />
+                            <img th:if="${reliquia.ID == 31}" th:src="@{/Img/Ornamentos/PenaconyTerradosSonhos.png}" />
+                            <img th:if="${reliquia.ID == 32}" th:src="@{/Img/Ornamentos/QuilhaQuebrada.png}" />
+                            <img th:if="${reliquia.ID == 33}" th:src="@{/Img/Ornamentos/SalsottoInerte.png}" />
+                            <img th:if="${reliquia.ID == 34}" th:src="@{/Img/Ornamentos/SigoniaaDesolacaoNaoReinvindicada.png}" />
+                            <img th:if="${reliquia.ID == 35}" th:src="@{/Img/Ornamentos/TaliaReinodoBanditidmo.png}" />
+                            <img th:if="${reliquia.ID == 36}" th:src="@{/Img/Ornamentos/VonwacqVivaz.png}" />
                         </div>
                         <div class="col-md-6">
-                            <h2 style="text-align: justify; word-break: break-all">Descricao: <span>Textão muito loucou e derivaldo de algo KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</span></h2>
+                            <h2 style="text-align: justify; word-break: break-word;">Descricao:</br>
+                                <span th:text="${reliquia.Bonus1}"></span></br>
+                                <span th:if="${reliquia.Bonus2 != null}" th:text="${reliquia.Bonus2}"></span>
+                            </h2>
                         </div>
                     </section>
                 </div>

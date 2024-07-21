@@ -20,19 +20,130 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <h1>NOME</h1>
+                    <h1><span th:text='${cone.Nome}'></span></h1>
                     <section id="Pg">
                         <div class="col-md-6">
-                            <img th:src="@{/Img/Cones/Abundancia/Cornucopia.png}" />
+                            <img th:if="${cone.ID == 1}" th:src="@{/Img/Cones/Destruicao/AlgoInsubstituivel.png}" />
+                            <img th:if="${cone.ID == 2}" th:src="@{/Img/Cones/Destruicao/EuSereiMinhaPropriaEspada.png}" />
+                            <img th:if="${cone.ID == 3}" th:src="@{/Img/Cones/Destruicao/MaisClarodoqueoSol.png}" />
+                            <img th:if="${cone.ID == 4}" th:src="@{/Img/Cones/Destruicao/NaQuedadeumAeon.png}" />
+                            <img th:if="${cone.ID == 5}" th:src="@{/Img/Cones/Destruicao/OLadoInacessível.png}" />
+                            <img th:if="${cone.ID == 6}" th:src="@{/Img/Cones/Destruicao/OndeosSonhosDeveriamRepousar.png}" />
+                            <img th:if="${cone.ID == 7}" th:src="@{/Img/Cones/Destruicao/AsToupeirasTeDaoBoasVindas.png}" />
+                            <img th:if="${cone.ID == 8}" th:src="@{/Img/Cones/Destruicao/AuHoradePassear.png}" />
+                            <img th:if="${cone.ID == 9}" th:src="@{/Img/Cones/Destruicao/ChamasDistantes.png}" />
+                            <img th:if="${cone.ID == 10}" th:src="@{/Img/Cones/Destruicao/PromessaIndelevel.png}" />
+                            <img th:if="${cone.ID == 11}" th:src="@{/Img/Cones/Destruicao/SemEscapatoria.png}" />
+                            <img th:if="${cone.ID == 12}" th:src="@{/Img/Cones/Destruicao/SoboCeuAzul.png}" />
+                            <img th:if="${cone.ID == 13}" th:src="@{/Img/Cones/Destruicao/UmVotoSecreto.png}" />
+                            <img th:if="${cone.ID == 14}" th:src="@{/Img/Cones/Destruicao/CasaDestruida.png}" />
+                            <img th:if="${cone.ID == 15}" th:src="@{/Img/Cones/Destruicao/CeuColapsado.png}" />
+                            <img th:if="${cone.ID == 16}" th:src="@{/Img/Cones/Destruicao/MorteMutua.png}" />
+                            <img th:if="${cone.ID == 17}" th:src="@{/Img/Cones/Caca/InquietanteExtasiante.png}" />
+                            <img th:if="${cone.ID == 18}" th:src="@{/Img/Cones/Caca/NaNoite.png}" />
+                            <img th:if="${cone.ID == 19}" th:src="@{/Img/Cones/Caca/OBatismodePensamentoPuro.png}" />
+                            <img th:if="${cone.ID == 20}" th:src="@{/Img/Cones/Caca/PercorrendooMarEstelar.png}" />
+                            <img th:if="${cone.ID == 21}" th:src="@{/Img/Cones/Caca/SonoProfundo.png}" />
+                            <img th:if="${cone.ID == 22}" th:src="@{/Img/Cones/Caca/VelejandoemDirecaoaumaSegundaVida.png}" />
+                            <img th:if="${cone.ID == 23}" th:src="@{/Img/Cones/Caca/ApenasoSilencioSobrou.png}" />
+                            <img th:if="${cone.ID == 24}" th:src="@{/Img/Cones/Caca/InscrevaseParaMais.png}" />
+                            <img th:if="${cone.ID == 25}" th:src="@{/Img/Cones/Caca/JogodeEspadas.png}" />
+                            <img th:if="${cone.ID == 26}" th:src="@{/Img/Cones/Caca/ORioCorrenaPrimavera.png}" />
+                            <img th:if="${cone.ID == 27}" th:src="@{/Img/Cones/Caca/OUltimoVencedor.png}" />
+                            <img th:if="${cone.ID == 28}" th:src="@{/Img/Cones/Caca/RetornoaEscuridao.png}" />
+                            <img th:if="${cone.ID == 29}" th:src="@{/Img/Cones/Caca/Antagonista.png}" />
+                            <img th:if="${cone.ID == 30}" th:src="@{/Img/Cones/Caca/FlechaVeloz.png}" />
+                            <img th:if="${cone.ID == 31}" th:src="@{/Img/Cones/Caca/Flechas.png}" />
+                            <img th:if="${cone.ID == 32}" th:src="@{/Img/Cones/Erudicao/AntesdoAmanhecer.png}" />
+                            <img th:if="${cone.ID == 33}" th:src="@{/Img/Cones/Erudicao/CalculoIninterrupto.png}" />
+                            <img th:if="${cone.ID == 34}" th:src="@{/Img/Cones/Erudicao/MasaEsperancaNaotemPreco.png}" />
+                            <img th:if="${cone.ID == 35}" th:src="@{/Img/Cones/Erudicao/NoitenaViaLactea.png}" />
+                            <img th:if="${cone.ID == 36}" th:src="@{/Img/Cones/Erudicao/UmInstanteEternamenteAdorado.png}" />
+                            <img th:if="${cone.ID == 37}" th:src="@{/Img/Cones/Erudicao/ASolenidadedoCafedaManha.png}" />
+                            <img th:if="${cone.ID == 38}" th:src="@{/Img/Cones/Erudicao/DepoisdaQuedadeCharmony.png}" />
+                            <img th:if="${cone.ID == 39}" th:src="@{/Img/Cones/Erudicao/FacaoMundoClamar.png}" />
+                            <img th:if="${cone.ID == 40}" th:src="@{/Img/Cones/Erudicao/HojeeMaisumDiadePaz.png}" />
+                            <img th:if="${cone.ID == 41}" th:src="@{/Img/Cones/Erudicao/MeuProprioNascimento.png}" />
+                            <img th:if="${cone.ID == 42}" th:src="@{/Img/Cones/Erudicao/ODiaemqueoCosmosCaiu.png}" />
+                            <img th:if="${cone.ID == 43}" th:src="@{/Img/Cones/Erudicao/RepousodosGenios.png}" />
+                            <img th:if="${cone.ID == 44}" th:src="@{/Img/Cones/Erudicao/BancodeDados.png}" />
+                            <img th:if="${cone.ID == 45}" th:src="@{/Img/Cones/Erudicao/ChaveMestra.png}" />
+                            <img th:if="${cone.ID == 46}" th:src="@{/Img/Cones/Erudicao/Sagacidade.png}" />
+                            <img th:if="${cone.ID == 47}" th:src="@{/Img/Cones/Harmonia/FugaTerrena.png}" />
+                            <img th:if="${cone.ID == 48}" th:src="@{/Img/Cones/Harmonia/LuzesNoturnas.png}" />
+                            <img th:if="${cone.ID == 49}" th:src="@{/Img/Cones/Harmonia/MasaBatalhaNaoAcabou.png}" />
+                            <img th:if="${cone.ID == 50}" th:src="@{/Img/Cones/Harmonia/MeuPassadonoEspelho.png}" />
+                            <img th:if="${cone.ID == 51}" th:src="@{/Img/Cones/Harmonia/AventuradeSonhopolis.png}" />
+                            <img th:if="${cone.ID == 52}" th:src="@{/Img/Cones/Harmonia/DanceDanceDance.png}" />
+                            <img th:if="${cone.ID == 53}" th:src="@{/Img/Cones/Harmonia/EncontroPlanetario.png}" />
+                            <img th:if="${cone.ID == 54}" th:src="@{/Img/Cones/Harmonia/EsculpindoaLuaTecendoasNuvens.png}" />
+                            <img th:if="${cone.ID == 55}" th:src="@{/Img/Cones/Harmonia/MemoriasdoPassado.png}" />
+                            <img th:if="${cone.ID == 56}" th:src="@{/Img/Cones/Harmonia/PassadoeFuturo.png}" />
+                            <img th:if="${cone.ID == 57}" th:src="@{/Img/Cones/Harmonia/PelaJornadadoAmanha.png}" />
+                            <img th:if="${cone.ID == 58}" th:src="@{/Img/Cones/Harmonia/Meditacao.png}" />
+                            <img th:if="${cone.ID == 59}" th:src="@{/Img/Cones/Harmonia/RededeEngrenagens.png}" />
+                            <img th:if="${cone.ID == 60}" th:src="@{/Img/Cones/Harmonia/Refrao.png}" />
+                            <img th:if="${cone.ID == 61}" th:src="@{/Img/Cones/Inexistencia/AoLongodaMargemTransitoria.png}" />
+                            <img th:if="${cone.ID == 62}" th:src="@{/Img/Cones/Inexistencia/ChuvaConstante.png}" />
+                            <img th:if="${cone.ID == 63}" th:src="@{/Img/Cones/Inexistencia/CuraSolitaria.png}" />
+                            <img th:if="${cone.ID == 64}" th:src="@{/Img/Cones/Inexistencia/EmNomedoMundo.png}" />
+                            <img th:if="${cone.ID == 65}" th:src="@{/Img/Cones/Inexistencia/RecordacaoReforjada.png}" />
+                            <img th:if="${cone.ID == 66}" th:src="@{/Img/Cones/Inexistencia/VocêSoPrecisadePaciencia.png}" />
+                            <img th:if="${cone.ID == 67}" th:src="@{/Img/Cones/Inexistencia/ADeterminacaoBrilhacomoGotasdeSuor.png}" />
+                            <img th:if="${cone.ID == 68}" th:src="@{/Img/Cones/Inexistencia/AindanosVeremosdeNovo.png}" />
+                            <img th:if="${cone.ID == 69}" th:src="@{/Img/Cones/Inexistencia/AntesdoIniciodaMissaodoTutorial.png}" />
+                            <img th:if="${cone.ID == 70}" th:src="@{/Img/Cones/Inexistencia/BoaNoiteeDurmaBem.png}" />
+                            <img th:if="${cone.ID == 71}" th:src="@{/Img/Cones/Inexistencia/DançaIlimitada.png}" />
+                            <img th:if="${cone.ID == 72}" th:src="@{/Img/Cones/Inexistencia/EHoradoShow.png}" />
+                            <img th:if="${cone.ID == 73}" th:src="@{/Img/Cones/Inexistencia/Fermata.png}" />
+                            <img th:if="${cone.ID == 74}" th:src="@{/Img/Cones/Inexistencia/OlhosdaPresa.png}" />
+                            <img th:if="${cone.ID == 75}" th:src="@{/Img/Cones/Inexistencia/Loop.png}" />
+                            <img th:if="${cone.ID == 76}" th:src="@{/Img/Cones/Inexistencia/SombraOculta.png}" />
+                            <img th:if="${cone.ID == 77}" th:src="@{/Img/Cones/Inexistencia/Vazio.png}" />
+                            <img th:if="${cone.ID == 78}" th:src="@{/Img/Cones/Preservacao/DestinoInerentementeInjusto.png}" />
+                            <img th:if="${cone.ID == 79}" th:src="@{/Img/Cones/Preservacao/ElaJaFechouSeusOlhos.png}" />
+                            <img th:if="${cone.ID == 80}" th:src="@{/Img/Cones/Preservacao/MomentodeVitoria.png}" />
+                            <img th:if="${cone.ID == 81}" th:src="@{/Img/Cones/Preservacao/TexturadeMemorias.png}" />
+                            <img th:if="${cone.ID == 82}" th:src="@{/Img/Cones/Preservacao/AEscolhadosLandau.png}" />
+                            <img th:if="${cone.ID == 83}" th:src="@{/Img/Cones/Preservacao/ConcertoparaDois.png}" />
+                            <img th:if="${cone.ID == 84}" th:src="@{/Img/Cones/Preservacao/EssaSouEu.png}" />
+                            <img th:if="${cone.ID == 85}" th:src="@{/Img/Cones/Preservacao/FiosForjadosdoDestino.png}" />
+                            <img th:if="${cone.ID == 86}" th:src="@{/Img/Cones/Preservacao/PrimeiroDiadaMinhaNovaVida.png}" />
+                            <img th:if="${cone.ID == 87}" th:src="@{/Img/Cones/Preservacao/SomosFogoVivo.png}" />
+                            <img th:if="${cone.ID == 88}" th:src="@{/Img/Cones/Preservacao/TendenciadoMercadoUniversal.png}" />
+                            <img th:if="${cone.ID == 89}" th:src="@{/Img/Cones/Preservacao/Ambar.png}" />
+                            <img th:if="${cone.ID == 90}" th:src="@{/Img/Cones/Preservacao/Defesa.png}" />
+                            <img th:if="${cone.ID == 91}" th:src="@{/Img/Cones/Preservacao/Pioneirismo.png}" />
+                            <img th:if="${cone.ID == 92}" th:src="@{/Img/Cones/Abundancia/EcosdoCaixao.png}" />
+                            <img th:if="${cone.ID == 93}" th:src="@{/Img/Cones/Abundancia/NoiteAterrorizante.png}" />
+                            <img th:if="${cone.ID == 94}" th:src="@{/Img/Cones/Abundancia/OTempoNãoEsperaporNinguem.png}" />
+                            <img th:if="${cone.ID == 95}" th:src="@{/Img/Cones/Abundancia/ConversaPosOperatoria.png}" />
+                            <img th:if="${cone.ID == 96}" th:src="@{/Img/Cones/Abundancia/EiEstouAqui.png}" />
+                            <img th:if="${cone.ID == 97}" th:src="@{/Img/Cones/Abundancia/MomentoPerfeito.png}" />
+                            <img th:if="${cone.ID == 98}" th:src="@{/Img/Cones/Abundancia/OCalorEncurtaasNoitesGeladas.png}" />
+                            <img th:if="${cone.ID == 99}" th:src="@{/Img/Cones/Abundancia/OQueeReal.png}" />
+                            <img th:if="${cone.ID == 100}" th:src="@{/Img/Cones/Abundancia/QuidProQuo.png}" />
+                            <img th:if="${cone.ID == 101}" th:src="@{/Img/Cones/Abundancia/SentimentoCompartilhado.png}" />
+                            <img th:if="${cone.ID == 102}" th:src="@{/Img/Cones/Abundancia/Cornucopia.png}" />
+                            <img th:if="${cone.ID == 103}" th:src="@{/Img/Cones/Abundancia/FrutaDelicada.png}" />
+                            <img th:if="${cone.ID == 104}" th:src="@{/Img/Cones/Abundancia/Multiplicacao.png}" />
                             <table>
                                 <tr>
-                                    <td><img th:src="@{/Img/Caminhos/Abundancia.png}" /></td>
-                                    <td>Tipo</td>
+                                    <td>
+                                        <img th:if="${cone.Tipo == 'A Abundância'}" th:src="@{/Img/Caminhos/Abundancia.png}" />
+                                        <img th:if="${cone.Tipo == 'A Caça'}" th:src="@{/Img/Caminhos/Caca.png}" />
+                                        <img th:if="${cone.Tipo == 'A Destruição'}" th:src="@{/Img/Caminhos/Destruicao.png}" />
+                                        <img th:if="${cone.Tipo == 'A Erudição'}" th:src="@{/Img/Caminhos/Erudicao.png}" />
+                                        <img th:if="${cone.Tipo == 'A Harmonia'}" th:src="@{/Img/Caminhos/Harmonia.png}" />
+                                        <img th:if="${cone.Tipo == 'A Inexistência'}" th:src="@{/Img/Caminhos/Inexistencia.png}" />
+                                        <img th:if="${cone.Tipo == 'A Preservação'}" th:src="@{/Img/Caminhos/Preservacao.png}" />
+                                    </td>
+                                    <td th:text="${cone.Tipo}"></td>
                                 </tr>
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <h2 style="text-align: justify; word-break: break-all">Descricao: <span>Textão muito loucou e derivaldo de algo KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</span></h2>
+                            <h2 style="text-align: justify; word-break: break-word;">Descricao: <span th:text="${cone.Descricao}"></span></h2>
                         </div>
                     </section>
                 </div>

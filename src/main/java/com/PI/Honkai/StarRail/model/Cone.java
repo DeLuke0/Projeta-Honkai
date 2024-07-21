@@ -9,15 +9,16 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity 
 @Table(name="Cone") 
-public class Cone {
+public class Cone{
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int ID;
+    private Integer ID;
     @NotBlank(message="Nome obrigatório") 
     private String Nome;
     @NotBlank(message="Descrição obrigatória") 
